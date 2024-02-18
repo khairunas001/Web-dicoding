@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand',   sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(197, 197, 197);
+}
+   
+h2, h3 {
+    color: rgb(54, 52, 52);;
+}
+   
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(54, 52, 52);
+    text-align: center;
+    font-weight: bold;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 135);
+}
+
+nav a:hover {
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 135) ;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 20px 20px 0 rgba(255, 255, 255, 0.5);
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.card {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: rgb(255, 255, 135);
+}
+
+.bg-img{
+    background-image:url('../image/jumbtronimg.jpg');
+    background-size: cover;
+    background-attachment: auto;
+}
+
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem; 
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: rgb(54, 52, 52);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
